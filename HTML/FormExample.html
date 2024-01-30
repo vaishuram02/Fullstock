@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Form</h2>
+    <form action="server.js" method="post">
+      <label for="fn">Enter your First name:</label>
+      <input
+        type="text"
+        id="fn"
+        name="first"
+        placeholder="Sanjana"
+      /><br /><br />
+      <label for="ln">Enter your Last name:</label>
+      <input type="text" id="ln" name="last" placeholder="Ram" /><br /><br />
+      <label for="em">Enter your email</label>
+      <input
+        type="email"
+        id="em"
+        name="email"
+        placeholder="abc@email.com"
+      /><br /><br />
+      <label for="pw">Enter your password</label>
+      <input type="password" id="pw" name="password" minlength="7" pattern="[A-Za-z]{4}[0-9]{2}"/><br /><br />
+      <input type="datetime-local" name="Date" id="dt" /><br /><br />
+      <input type="number" name="Qty" id="qy" />
+      <input type="file" value="" /><br /><br />
+
+      <input type="checkbox" name="html" id="html" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="css" id="css" />
+      <label for="css">CSS</label>
+      <input type="checkbox" name="java" id="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" name="js" id="js" />
+      <label for="js">JS</label><br /><br />
+      <div>
+        <label for="fr">Please Select your favourite Fruit:</label>
+        <input type="text" name="fruit" id="fr" list="mydata" />
+        <datalist id="mydata">
+          <option value="apple"></option>
+          <option value="banana"></option>
+          <option value="orange"></option>
+          <option value="mango"></option>
+        </datalist>
+      </div>
+      <br />
+
+        <hr/>
+        <div>
+          <label for="vc">Choose your vehicle</label>
+          <select name="vehicle" id="vc">
+            <optgroup label="Cars">
+              <option value="bmw">BMW</option>
+              <option value="lamborgini">Lamborgini</option>
+              <option value="maruti">Maruti</option>
+              <option value="tatasumo">tata sumo</option>
+              <option value="ferrari">ferari</option>
+            </optgroup>
+            <optgroup label="bikes">
+              <option value="duke">Duke</option>
+              <option value="pulsur">pulsur</option>
+
+              <option value="hayabuza">Hayabuza</option>
+
+              <option value="rf">royal enfield</option>
+            </optgroup>
+            <optgroup label="others">
+              <option value="bullokart">bullokart</option>
+            </optgroup>
+          </select>
+        </div>
+        <br/>
+        <div>
+            <label for="batch">Batch</label>
+            <select name="batch" id="batch">
+              <option value="mng">Morning</option>
+              <option value="eng">Evening</option>
+        </div>
+        <input type="submit" value="Submit" />
+        <input type="reset" name="Reset" />
+        <input type="search" name="srch" id="srch" />
+      </select>
+    </form>
+  </body>
+</html>
